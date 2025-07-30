@@ -1,0 +1,123 @@
+# MSYS2
+
+| Name         | Prefix         | Toolchain     | Architecture | C Library | C++ Library |
+| :------------- | :------------ | :----------- | :-------- | :---------- | --------- |
+| **MSYS**       | `/usr`        | gcc          | x86_64    | cygwin      | libstdc++ |
+| **UCRT64**     | `/ucrt64`     | gcc          | x86_64    | ucrt        | libstdc++ |
+| **CLANG64**    | `/clang64`    | llvm         | x86_64    | ucrt        | libc++    |
+| **CLANGARM64** | `/clangarm64` | llvm         | aarch64   | ucrt        | libc++    |
+| **MINGW64**    | `/mingw64`    | gcc          | x86_64    | msvcrt      | libstdc++ |
+
+## pacman用法
+更新
++ `pacman -Sy`: 从服务器下载新的软件包数据库。
++ `pacman -Su`: 升级所有已安装的软件包。
++ `pacman -Syu`: 升级整个系统。
+
+安装
++ `pacman -S <package>`: 安装软件。也可以同时安装多个包，只需以空格分隔包名即可。
++ `pacman -Sy <package>`：安装软件前，先从远程仓库下载软件包数据库。
+
+卸载
++ `pacman -R <package>`: 该命令将只删除包，保留其全部已经安装的依赖关系。
++ `pacman -Rs <package>`: 删除软件，同时删除本机上只有该软件依赖的软件。
++ `pacman -Ru <package>`: 删除软件,同时删除不再被任何软件所需要的依赖。
+
+搜索
++ `pacman -Ss <keyword>`: 在仓库中搜索含关键字的软件包（本地已安装的会标记）。
++ `pacman -Qs <keyword>`: 搜索已安装的软件包。
++ `pacman -Qu`: 列出所有可升级的软件包。
++ `pacman -Qt`: 列出不被任何软件要求的软件包。
+
+查询
++ `pacman -Q <package>`: 查看软件包是否已安装，已安装则显示软件包名称和版本。
++ `pacman -Qi <package>`: 查看某个软件包信息，显示较为详细的信息，包括描述、构架、依赖、大小等。
++ `pacman -Ql <package>`: 列出软件包内所有文件，包括软件安装的每个文件、文件夹的名称和路径。
+
+清理
++ `pacman -Sc`：清理未安装的包文件。
++ `pacman -Scc`：清理所有的缓存文件。
+## 替换国内源
+配置文件在：MSYS2\etc\pacman.d\中：
+
+mirrorlist.ucrt64
+```bash
+## Primary
+Server = https://mirrors.ustc.edu.cn/msys2/mingw/ucrt64/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/ucrt64/
+```
+mirrorlist.clang64
+```bash
+## Primary
+Server = https://mirrors.ustc.edu.cn/msys2/mingw/clang64/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/clang64/
+```
+mirrorlist.mingw64
+```bash
+## Primary
+Server = http://mirrors.ustc.edu.cn/msys2/mingw/x86_64/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/x86_64/
+```
+mirrorlist.msys
+```bash
+## Primary
+Server = http://mirrors.ustc.edu.cn/msys2/msys/$arch/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/msys/$arch/
+```
+mirrorlist.mingw
+```bash
+## Primary
+Server = https://mirrors.ustc.edu.cn/msys2/mingw/$repo/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/$repo/
+```
+mirrorlist.mingw32
+```bash
+## Primary
+Server = http://mirrors.ustc.edu.cn/msys2/mingw/i686/
+Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/i686/
+```
+
+## 在Windows Terminal中使用MSYS2
+```json
+{
+    "commandline": "C:/Programs/MSYS2/msys2_shell.cmd -defterm -here -no-start -ucrt64 -shell bash",
+    "guid": "{aef16ae0-7dd1-4ac7-abd8-60a646abb9ca}",
+    "hidden": false,
+    "icon": "C:/Programs/MSYS2/ucrt64.ico",
+    "name": "MSYS2 ucrt64",
+    "startingDirectory": "C:/Repos"
+},
+{
+    "commandline": "C:/Programs/MSYS2/msys2_shell.cmd -defterm -here -no-start -clang64 -shell bash",
+    "guid": "{1f2869c0-1310-403b-93a7-9227f42eeb24}",
+    "hidden": false,
+    "icon": "C:/Programs/MSYS2/clang64.ico",
+    "name": "MSYS2 clang64",
+    "startingDirectory": "C:/Repos"
+}
+```
+
+## c++环境配置
+公共：
+```bash
+pacman -S base-devel git vim
+
+git config --global user.name "username"
+git config --global user.email "email"
+```
+
+ucrt64(推荐)：
+```bash
+pacman -S mingw-w64-ucrt-x86_64-toolchain mingw-w64-ucrt-x86_64-cmake
+```
+
+mingw64:
+```bash
+pacman -S mingw-w64-x86_64-toolchain mingw-w64-x86_64-cmake
+```
+
+clang64：
+
+```bash
+pacman -S mingw-w64-clang-x86_64-toolchain mingw-w64-clang-x86_64-cmake
+```
