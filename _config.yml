@@ -1,3 +1,9 @@
-theme: jekyll-theme-minimal
-title: nowhere-man's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: nowhere-man's blog
+description: >-
+  Welcome to my blog.
+
+permalink: /:categories/
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
