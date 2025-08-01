@@ -8,9 +8,13 @@ layout: default
 ## Categories
 
 <ul>
-  {% for category in site.categories %}
-    <li><a href="/categories/{{ category[0] | downcase }}/">{{ category[0] }}</a></li>
-  {% endfor %}
+  <li><a href="/categories/config/">Config</a></li>
+  <li><a href="/categories/devtools/">DevTools</a></li>
+  <li><a href="/categories/cpp/">C++</a></li>
+  <li><a href="/categories/linux/">Linux</a></li>
+  <li><a href="/categories/windows/">Windows</a></li>
+  <li><a href="/categories/encoder/">Encoder</a></li>
+  <li><a href="/categories/network/">Network</a></li>
 </ul>
 
 ## Latest Posts
