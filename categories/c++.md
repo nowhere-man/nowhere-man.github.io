@@ -1,7 +1,7 @@
 ---
 layout: page-no-title
 category: C++
-permalink: /categories/cpp/
+permalink: /categories/c++/
 ---
 
 <h1>C++</h1>

@@ -16,7 +16,7 @@ layout: default
 ## Latest Posts
 
 <ul>
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts limit:50 %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
