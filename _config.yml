@@ -2,7 +2,7 @@ title: nowhere-man's blog
 description: >-
   Welcome to my blog.
 
-permalink: /:categories/
+permalink: /:categories/:title/
 markdown: kramdown
 theme: minima
 plugins:

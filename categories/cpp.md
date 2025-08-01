@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: page-no-title
 category: C++
 permalink: /categories/cpp/
 ---
