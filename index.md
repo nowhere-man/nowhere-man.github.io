@@ -8,7 +8,7 @@ layout: default
 ## Categories
 
 <ul>
-  <li><a href="/categories/config/">Config</a></li>
+  <li><a href="/categories/config/">Configs</a></li>
   <li><a href="/categories/devtools/">DevTools</a></li>
   <li><a href="/categories/cpp/">C++</a></li>
   <li><a href="/categories/linux/">Linux</a></li>
