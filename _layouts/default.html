@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.27.20/tocbot.css">
+    <style>
+      .toc-list-item.is-active-li > .toc-link.is-active-link {
+        color: #3b82f6; /* blue-500 */
+        font-weight: bold;
+      }
+      .toc-list-item > .toc-link:hover {
+        color: #3b82f6; /* blue-500 */
+      }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    {% include header.html %}
+
+    <main>
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sjs = SimpleJekyllSearch({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('search-results'),
+                json: '{{ "/search.json" | relative_url }}',
+                searchResultTemplate: '<div class="bg-white p-6 rounded-lg shadow-md mb-6"><h3 class="text-xl font-bold text-gray-800 mb-2"><a href="{url}" class="hover:underline">{title}</a></h3><p class="text-gray-600 text-sm mb-4">发布日期：{date} | 分类：{categories}</p><a href="{url}" class="mt-4 inline-block text-blue-500 hover:underline">阅读全文 &rarr;</a></div>',
+                noResultsText: '<p class="text-center text-gray-500">没有找到相关结果</p>',
+                limit: 10,
+                fuzzy: false,
+                searcher: function(input) { // Override the default searcher
+                    var searchInput = this.searchInput.value;
+                    if (searchInput === '') {
+                        this.displayResults([]);
+                        return;
+                    }
+                    var results = this.utils.getFromJSON(this.options.json).filter(function(item) {
+                        return item.title.toLowerCase().indexOf(searchInput.toLowerCase()) > -1;
+                    }, this);
+                    this.displayResults(results);
+                }
+            });
+
+            var searchForm = document.getElementById('search-form');
+            var searchInput = document.getElementById('search-input');
+            var postList = document.getElementById('post-list');
+            var resultsContainer = document.getElementById('search-results');
+
+            if (searchForm) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Prevent page reload
+                    var query = searchInput.value.trim();
+
+                    if (query === '') {
+                        postList.style.display = 'block';
+                        resultsContainer.style.display = 'none';
+                    } else {
+                        postList.style.display = 'none';
+                        resultsContainer.style.display = 'block';
+                        sjs.search(query); // Manually trigger the search
+                    }
+                });
+            }
+
+            // Also, handle clearing the search input
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    if (searchInput.value.trim() === '') {
+                        postList.style.display = 'block';
+                        resultsContainer.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

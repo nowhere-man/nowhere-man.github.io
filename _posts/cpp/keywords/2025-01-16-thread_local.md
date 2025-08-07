@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C++关键字-threaad_local
+title: C++关键字-thread_local
 slug: thread_local
 categories: [C++]
 ---

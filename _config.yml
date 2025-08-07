@@ -1,9 +1,15 @@
-title: nowhere-man's blog
+title: 我的技术分享博客
 description: >-
-  Welcome to my blog.
+  欢迎来到我的技术分享博客
 
 permalink: /:categories/:title/
 markdown: kramdown
-theme: minima
+kramdown:
+  input: GFM
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  syntax_highlighter: rouge
 plugins:
   - jekyll-feed
