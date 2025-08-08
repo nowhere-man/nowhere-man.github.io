@@ -1254,10 +1254,6 @@ table tr:nth-child(2n) {
     display: none;
 }
 
-.post-toc {
-
-ul {
+.post-toc ul {
     overflow: auto;
-}
-
 }
