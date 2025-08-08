@@ -2,7 +2,8 @@
 layout: post
 title: C++关键字-thread_local
 slug: thread_local
-categories: [C++]
+categories: [C++总结]
+tags: [C++ keywords]
 ---
 
 ## 存储说明符

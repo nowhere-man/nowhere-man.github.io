@@ -2,10 +2,9 @@
 layout: post
 title: GCC编译、链接选项
 slug: gcc-options
-categories: [DevTools]
+categories: [开发工具]
+tags: [Clang/GCC]
 ---
-
-# C/C++常用选项
 
 ## 编译选项
 

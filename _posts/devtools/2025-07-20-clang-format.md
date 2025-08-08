@@ -2,7 +2,8 @@
 layout: post
 title: clang-format 配置
 slug: clang-format-configuration
-categories: [DevTools]
+categories: [开发工具]
+tags: [Clang/GCC]
 ---
 
 ```yaml

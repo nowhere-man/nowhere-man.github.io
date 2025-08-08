@@ -2,13 +2,11 @@
 layout: post
 title: x264 帧类型决策
 slug: x264-slice-type-decision
-categories: [Encoder]
+categories: [视频编码]
+tags: [H.264]
 ---
-# 帧类型决策
 
 在lookahead阶段，帧的初始类型都被标记为X264_TYPE_AUTO。
-
-
 
 lookahead阶段的帧参考关系：
 

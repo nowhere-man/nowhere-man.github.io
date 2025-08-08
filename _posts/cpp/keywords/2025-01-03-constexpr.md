@@ -2,7 +2,8 @@
 layout: post
 title: C++关键字-constexpr
 slug: constexpr
-categories: [C++]
+categories: [C++总结]
+tags: [C++ keywords]
 ---
 
 ## const

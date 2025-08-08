@@ -2,10 +2,10 @@
 layout: post
 title: C++关键字-struct和class
 slug: struct-and-class
-categories: [C++]
+categories: [C++总结]
+tags: [C++ keywords]
 ---
 
-# struct和class的区别
 struct和class有很大的相似性。
 但是两者最大的区别就在于思想上，一般来说，struct更适合看成是一个数据结构（纯粹的数据对象，POD结构）的实现体，class更适合看成是一个对象的实现体。
 ## 1. 默认的访问权限

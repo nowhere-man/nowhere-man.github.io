@@ -2,10 +2,10 @@
 layout: post
 title: x264 码控-Prerequisites
 slug: x264-rc-prerequisites
-categories: [Encoder]
+categories: [视频编码]
+tags: [H.264]
 ---
 
-# Prerequisites
 ## RDO理论
 根据**RDO理论**：
 

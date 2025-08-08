@@ -2,8 +2,10 @@
 layout: post
 title: C++关键字-alignas和alignof
 slug: alignas-alignof
-categories: [C++]
+categories: [C++总结]
+tags: [C++ keywords]
 ---
+
 ## alignof
 `alignof(type)`，用于获取类型的对齐字节数；返回size_t类型；alignof只能用于类型。
 ```cpp
