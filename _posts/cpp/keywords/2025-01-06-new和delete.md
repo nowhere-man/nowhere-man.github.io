@@ -11,6 +11,7 @@ new运算符用于在**堆上动态分配**。
 
 如果分配成功，则返回指向分配内存的指针；**如果分配失败，则抛出std::bad_alloc异常**。
 ### new内置类型
+
 ```cpp
 // 动态申请一个int类型的空间
 int* a = new int;
@@ -28,6 +29,7 @@ int* d = new int[10]{ 1,2,3 };
 1. 调用**operator new函数**分配内存。
 1. 调用类的对应**构造函数**生成对象。
 1. 返回对应指针。
+
 ```cpp
 Foo* f1 = new Foo;
 Foo* f2 = new Foo();
@@ -51,6 +53,7 @@ operator new执行的操作**只是分配内存**，事实上全局函数`::oper
 
 ### throw new
 在分配失败的情况下，抛出异常`std::bad_alloc`，而不是返回`NULL`。
+
 ```cpp
 void* operator new  ( std::size_t ) (std::bad_alloc);
 void* operator new[]( std::size_t ) (std::bad_alloc);
@@ -61,6 +64,7 @@ void* operator new[]( std::size_t, std::align_val_t ) (std::bad_alloc);
 
 ### nothrow new
 nothrow new在分配失败的情况下，不抛出异常，而是返回`NULL`。
+
 ```cpp
 void* operator new  ( std::size_t, const std::nothrow_t& );
 void* operator new[]( std::size_t, const std::nothrow_t& );
@@ -77,6 +81,7 @@ void* operator new[]( std::size_t, std::align_val_t, const std::nothrow_t& ) noe
 + 返回类型必须声明为`void*`
 + 第一个参数类型必须为表达要求分配空间的大小，类型为`size_t`
 + 可以带其它参数
+
 ```cpp
 void* operator new  ( std::size_t count, /* args... */ );
 void* operator new[]( std::size_t count, /* args... */ );
@@ -87,39 +92,38 @@ void* operator new[]( std::size_t count, std::align_val_t al, /* args... */ );
 
 如何限制对象只能建立在堆上或者栈上：
 + 只能建立在堆上：设置析构函数为`protected`
-    ```cpp
-    class A {
-    protected:
-        A(){}
-        ~A(){}
-    public:
-        static A* create()
-        {
-            return new A();
-        }
-        void destory()
-        {
-            delete this;
-        }
-    };
-    ```
+
+```cpp
+class A {
+protected:
+    A(){}
+    ~A(){}
+public:
+    static A* create()
+    {
+        return new A();
+    }
+    void destory()
+    {
+        delete this;
+    }
+};
+```
 + 只能建立在栈上：重载`operator new`并设为`private`
-    ```cpp
-    class A {
-    private:
-        void* operator new(size_t t){}
-        void operator delete(void* ptr){}
-    public:
-        A(){}
-        ~A(){}
-    };
-    ```
 
-
-
-
+```cpp
+class A {
+private:
+    void* operator new(size_t t){}
+    void operator delete(void* ptr){}
+public:
+    A(){}
+    ~A(){}
+};
+```
 
 ## 3. placement new
+
 ```cpp
 void* operator new  ( std::size_t count, void* ptr );
 void* operator new[]( std::size_t count, void* ptr );
@@ -130,6 +134,7 @@ void* operator new[]( std::size_t count, void* ptr );
 `placement new`本质上是对operator new的重载，在new头文件中定义。**它不分配内存**，而是调用对应构造函数在`ptr`所指的内存中构造一个对象，之后返回`ptr`。
 
 placement new不可重载。
+
 ```cpp
 int main()
 {

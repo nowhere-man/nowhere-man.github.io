@@ -16,6 +16,7 @@ tags: [C++ keywords]
 |static     |静态或者线程存储期，同时指示是内部链接|         |
 |extern     |静态或线程存储期，同时指示是外部链接|         |
 |thread_local     |线程存储期|         |
+
 ## thread_local
 有且只有`thread_local`关键字修饰的变量具有线程存储。
 > 线程存储期：对象的存储在线程开始时分配，而在线程结束时解分配。每一个线程都拥有一个独立的变量实例。唯有声明为thread_local的对象拥有此存储期。 thread_local能与static或extern一同出现，以指示链接属性。

@@ -58,7 +58,7 @@ for( int j = 1; j < num_frames; j++ )
         else
             frames[j]->i_type = X264_TYPE_B;
     }
-	// 决策了一个B帧，num_bframes就建议
+    // 决策了一个B帧，num_bframes就建议
     if( IS_X264_TYPE_B( frames[j]->i_type ) )
         num_bframes--;
     else // 如果决策出了P帧，则重置num_bframes
@@ -141,7 +141,12 @@ for( int j = 1; j < num_frames; j++ )
 
 关于cost的计算
 
-x264使用static uint64_t **slicetype_path_cost**( x264_t *h, x264_mb_analysis_t *a, x264_frame_t **frames, char *path, uint64_t threshold )计算给定帧类型序列的字符串，函数原型
+x264使用
+
+```c
+static uint64_t slicetype_path_cost( x264_t *h, x264_mb_analysis_t *a, x264_frame_t **frames, char *path, uint64_t threshold )
+```
+计算给定帧类型序列的字符串，函数原型
 
 ```c
 /// @brief 计算给定帧类型字符串path的cost
