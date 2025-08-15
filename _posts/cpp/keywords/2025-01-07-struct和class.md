@@ -3,7 +3,7 @@ layout: post
 title: C++关键字-struct和class
 slug: struct-and-class
 categories: [C++总结]
-tags: [C++ keywords]
+tags: [C++关键字]
 ---
 
 struct和class有很大的相似性。

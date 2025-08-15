@@ -3,7 +3,7 @@ layout: post
 title: C++关键字-static_assert
 slug: static-assert
 categories: [C++总结]
-tags: [C++ keywords]
+tags: [C++关键字]
 ---
 
 **static_assert 在 c++用来做编译期间的断言**，也叫静态断言。

@@ -3,7 +3,7 @@ layout: post
 title: C++关键字-new和delete
 slug: new-and-delete
 categories: [C++总结]
-tags: [C++ keywords]
+tags: [C++关键字]
 ---
 
 ## 1. new操作符

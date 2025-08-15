@@ -3,7 +3,7 @@ layout: post
 title: miniconda安装及使用
 slug: miniconda-installation-and-usage
 categories: [环境配置]
-tags: [Python]
+tags: [环境配置]
 ---
 
 ## miniconda安装

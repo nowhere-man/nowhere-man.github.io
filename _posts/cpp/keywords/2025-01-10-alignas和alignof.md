@@ -3,7 +3,7 @@ layout: post
 title: C++关键字-alignas和alignof
 slug: alignas-alignof
 categories: [C++总结]
-tags: [C++ keywords]
+tags: [C++关键字]
 ---
 
 ## alignof

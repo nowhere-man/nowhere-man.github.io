@@ -3,7 +3,7 @@ layout: post
 title: GCC编译、链接选项
 slug: gcc-options
 categories: [开发工具]
-tags: [Clang/GCC]
+tags: [GCC]
 ---
 
 ## 编译选项
