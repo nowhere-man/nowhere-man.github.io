@@ -1,3 +1,10 @@
+---
+layout: post
+title: C++并发编程 6：内存模型
+slug: cpp-concurrency-memory-model
+categories: [C++总结]
+tags: [C++并发编程]
+---
 ## 为什么需要内存模型
 
 开发者编写的代码和最终运行的程序往往会存在较大的差异，而运行结果与开发者预想一致，只是一种假象，之所以会产生差异，原因主要由于：
