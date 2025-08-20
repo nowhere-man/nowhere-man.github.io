@@ -1,6 +1,6 @@
 ---
 layout: post
-title: priority_queue核心总结
+title: priority_queue 核心总结
 slug: std-priority-queue
 categories: [C++总结]
 tags: [STL]
