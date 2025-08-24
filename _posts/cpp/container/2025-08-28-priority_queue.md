@@ -1,6 +1,6 @@
 ---
 layout: post
-title: priority_queue 核心总结
+title: STL容器适配器：priority_queue核心总结
 slug: std-priority-queue
 categories: [C++总结]
 tags: [STL]
