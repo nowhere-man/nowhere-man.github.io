@@ -22,6 +22,7 @@ highlighter: rouge
 kramdown:
   input: GFM
 
+mermaid: true
 
 # Pageinate settings
 paginate: 8 # 分页大小
