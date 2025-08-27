@@ -38,39 +38,55 @@ forward_list<int> v7(v6.begin(), v6.end());            // 使用迭代器初始�
 
 ## forward_list的成员函数
 
-**访问**：
-+ front()
+### **访问**
 
-**修改**:
-+ push_front()：在容器头部插入一个元素。
-+ emplace_front()
-+ pop_front()：删除容器头部的一个元素。
-+ erase_after()：删除容器中某个指定位置或区域内的所有元素。
-+ insert_after()：在指定位置之后插入一个新元素，并返回一个指向新元素的迭代器。
-+ emplace_after()
-+ clear()：清除所有元素，clear()完成后size()为0。
-+ resize()：调整容器的大小。
+| 成员函数  | 函数说明               |
+| --------- | ---------------------- |
+| `front()` | 返回对第一个元素的引用 |
 
-**容量**：
-+ empty()
-+ max_size():容器的理论极限size，和系统或库实现相关。
+### **修改**
 
+| 成员函数                                                 | 说明                                                         |
+| -------------------------------------------------------- | ------------------------------------------------------------ |
+| `assign(size_type count, const T& value)`                | 将 `forward_list` 的内容替换为 `count` 个值为 `value` 的元素。 |
+| `push_front(const T& value)`                             | 在 `forward_list` 的开头添加一个新元素 `value`。             |
+| `pop_front()`                                            | 移除 `forward_list` 的第一个元素。                           |
+| `insert_after(const_iterator position, const T& value)`  | 在 `position` 后插入一个新元素。                             |
+| `erase_after(const_iterator position)`                   | 移除 `position` 后的元素。                                   |
+| `emplace_front(Args&&... args)`                          | 在 `forward_list` 开头通过就地构造插入新元素。               |
+| `emplace_after(const_iterator position, Args&&... args)` | 在 `position` 后通过就地构造插入新元素。                     |
+| `clear()`                                                | 移除所有元素，使 `forward_list` 变为空。                     |
+| `swap(forward_list& other)`                              | 与另一个 `forward_list` 交换内容。                           |
+| `resize(size_type count)`                                | 改变 `forward_list` 的大小为 `count`。                       |
 
-**操作**
-+ merge()：合并两个事先已排好序的forward_list容器，并且合并之后的 forward_list 容器依然是有序的。
-+ splice_after()：将某forward_list容器中指定位置或区域内的元素插入到另一个容器的指定位置之后。
-+ remove()：删除容器中所有等于val的元素。
-+ remove_if()：删除容器中满足条件的元素。
-+ reverse()
-+ unique()：删除容器中相邻的重复元素，只保留一个。
-+ sort()
+### **容量**
 
+| 成员函数     | 说明                                                         |
+| ------------ | ------------------------------------------------------------ |
+| `empty()`    | 如果 `forward_list` 中没有元素，则返回 `true`。              |
+| `max_size()` | 返回 `forward_list` 可以容纳的最大元素数量。和系统或库实现相关。 |
 
-**迭代器**：
-+ begin() 和 end()
-+ cbegin() 和 cend()
-+ **before_begin()**：返回一个前向迭代器，其指向容器中第一个元素之前的位置。
-+ cbefore_begin()
+### 操作
+
+| 成员函数  | 说明                                            |
+| --------- | ----------------------------------------------- |
+| `unique()`                                                   | 移除相邻的重复元素。                                         |
+| `merge(forward_list& other)`                                 | 将另一个有序的 `forward_list` 合并到当前列表中。             |
+| `splice_after(const_iterator position, forward_list& other)` | 在 `position` 后将另一个 `forward_list` 的所有元素移动到当前列表中。 |
+| `remove(const T& value)`                                     | 移除所有等于 `value` 的元素。                                |
+| `reverse()`                                                  | 反转列表中的元素顺序。                                       |
+| `sort()`                                                     | 对列表中的元素进行排序。                                     |
+
+### **迭代器**
+
+| 成员函数          | 说明                                                         |
+| ----------------- | ------------------------------------------------------------ |
+| `begin()`         | 返回指向 `forward_list` 第一个元素的迭代器。                 |
+| `end()`           | 返回指向 `forward_list` 最后一个元素之后位置的迭代器。       |
+| `cbegin()`        | 返回指向 `forward_list` 第一个元素的 `const` 迭代器。        |
+| `cend()`          | 返回指向 `forward_list` 最后一个元素之后位置的 `const` 迭代器。 |
+| `before_begin()`  | 返回一个指向 `forward_list` 第一个元素**之前**的迭代器。     |
+| `cbefore_begin()` | 返回一个指向 `forward_list` 第一个元素**之前**的 `const` 迭代器。 |
 
 ## 计算forward_list成员个数
 ```cpp
