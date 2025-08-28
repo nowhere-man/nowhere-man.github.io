@@ -27,13 +27,13 @@ std::cout << sizeof(f) << std::endl;
 
 ## forward_list的构造函数
 ```cpp
-forward_list<int> f1;                                  // 无元素
-forward_list<int> f2 {1, 2, 3, 4, 5};                  // 列表初始化
-forward_list<int> f3(4);                               // 4个元素，初始值为0
-forward_list<int> f4(5, 3);                            // 5个元素，初始值为3
-forward_list<int> f5(f4);                              // 使用另外一个forward_list拷贝构造
-forward_list<int> v6(std::move(f5));                   // 使用另外一个forward_list移动构造
-forward_list<int> v7(v6.begin(), v6.end());            // 使用迭代器初始化[左闭,右开）
+forward_list<int> f1;                          // 无元素
+forward_list<int> f2 {1, 2, 3, 4, 5};          // 列表初始化
+forward_list<int> f3(4);                       // 4个元素，初始值为0
+forward_list<int> f4(5, 3);                    // 5个元素，初始值为3
+forward_list<int> f5(f4);                      // 使用另外一个forward_list拷贝构造
+forward_list<int> f6(std::move(f5));           // 使用另外一个forward_list移动构造
+forward_list<int> f7(f6.begin(), f6.end());    // 使用迭代器初始化[左闭,右开）
 ```
 
 ## forward_list的成员函数
@@ -46,18 +46,17 @@ forward_list<int> v7(v6.begin(), v6.end());            // 使用迭代器初始�
 
 ### **修改**
 
-| 成员函数                                                 | 说明                                                         |
-| -------------------------------------------------------- | ------------------------------------------------------------ |
-| `assign(size_type count, const T& value)`                | 将 `forward_list` 的内容替换为 `count` 个值为 `value` 的元素。 |
-| `push_front(const T& value)`                             | 在 `forward_list` 的开头添加一个新元素 `value`。             |
-| `pop_front()`                                            | 移除 `forward_list` 的第一个元素。                           |
-| `insert_after(const_iterator position, const T& value)`  | 在 `position` 后插入一个新元素。                             |
-| `erase_after(const_iterator position)`                   | 移除 `position` 后的元素。                                   |
-| `emplace_front(Args&&... args)`                          | 在 `forward_list` 开头通过就地构造插入新元素。               |
-| `emplace_after(const_iterator position, Args&&... args)` | 在 `position` 后通过就地构造插入新元素。                     |
-| `clear()`                                                | 移除所有元素，使 `forward_list` 变为空。                     |
-| `swap(forward_list& other)`                              | 与另一个 `forward_list` 交换内容。                           |
-| `resize(size_type count)`                                | 改变 `forward_list` 的大小为 `count`。                       |
+| 成员函数                                                 | 说明                                             |
+| -------------------------------------------------------- | ------------------------------------------------ |
+| `push_front(const T& value)`                             | 在 `forward_list` 的开头添加一个新元素 `value`。 |
+| `pop_front()`                                            | 移除 `forward_list` 的第一个元素。               |
+| `insert_after(const_iterator position, const T& value)`  | 在 `position` 后插入一个新元素。                 |
+| `erase_after(const_iterator position)`                   | 移除 `position` 后的元素。                       |
+| `emplace_front(Args&&... args)`                          | 在 `forward_list` 开头通过就地构造插入新元素。   |
+| `emplace_after(const_iterator position, Args&&... args)` | 在 `position` 后通过就地构造插入新元素。         |
+| `clear()`                                                | 移除所有元素，使 `forward_list` 变为空。         |
+| `swap(forward_list& other)`                              | 与另一个 `forward_list` 交换内容。               |
+| `resize(size_type count)`                                | 改变 `forward_list` 的大小为 `count`。           |
 
 ### **容量**
 
@@ -99,24 +98,25 @@ int count = std::distance(std::begin(f), std::end(f));
 forward_list<int> f{ 1,2,3,4 };
 
 for(auto it = f.begin(); it != f.end(); ++it) {
-    cout << *it << " ";
+    cout << *it << "\n";
 }
 ```
+## 遍历forward_list的同时删除节点
+
+```cpp
 forward_list<int> f{ 1,2,3,4 };
 auto cur = f.begin();
 auto prev = f.before_begin();
 
 while (cur != f.end()) {
     if (*cur % 2 == 0) {
-        it = f.erase_after(prev);
+        it = f.erase_after(prev); // 关键：删除cur节点，返回下一个节点的迭代器
     } else {
         prev = cur;
         cur++;
     }
 }
-
-
-## 遍历forward_list的同时删除节点
+```
 
 ## forward_list的迭代器失效规则
 + 插入：不会导致任何迭代器失效。
