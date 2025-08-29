@@ -29,10 +29,13 @@ tags: [STL]
 
 ## 构造函数
 
-`std::priority_queue`的模板格式：`std::priority_queue<T,Container,Compare>::priority_queue`
+`std::priority_queue`的模板格式：
+```cpp
+std::priority_queue<T, Container, Compare>::priority_queue
+```
 
 +   `T`是元素类型
-+   `Container`是底层容器，默认为`std::vector<>`，`Container`必须是用**数组实现**的容器。
++   `Container`是底层容器，默认为`std::vector<>`，还可以是`std::deque<>`。
 +   `Compare`是比较函数，默认为`std::less<>`
 
 ```cpp
