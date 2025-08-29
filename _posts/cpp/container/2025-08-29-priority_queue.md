@@ -58,7 +58,7 @@ std::priority_queue<int, std::vector<int>, std::greater<int>> pq5;
 
 1.   `std::less<T>` 是一个仿函数，它重载了 `operator()`，用于实现**小于**比较。当 `a < b` 成立时，`std::less<T>()(a, b)` 返回 `true`。
 
-2.   为了维持堆的稳定，**每个父节点都必须大于或等于其子节点**。
+2.   `std::priority_queue` 为了维持堆的稳定，**每个父节点都必须大于或等于其子节点**。
 
      +   `std::priority_queue` **期望 `Compare(parent, child)` 返回 `false`**，这样父子关系才正确。
 
@@ -75,12 +75,13 @@ std::priority_queue<int, std::vector<int>, std::greater<int>> pq5;
 ```cpp
 struct Node {
     int value;
-};
 
-bool operator<(const Node &parent, const Node &child)
-{
-    // 大根堆
-    return parent.value < child.value;
+
+    bool operator<(const Node &child)
+    {
+        // 大根堆
+        return this->value < child.value;
+    }
 }
 std::priority_queue<Node> pq;
 ```
@@ -104,6 +105,23 @@ struct compare {
 
 std::priority_queue<Node, std::vector<Node>, compare> pq;
 ```
+
+#### lambda表达式
+
+```cpp
+struct Node {
+    int value;
+};
+auto compare = [](const Node &parent, const Node &child) {
+    // 小根堆
+    return parent.value > child.value;
+    // 大根堆
+    return parent.value < child.value;
+}
+std::priority_queue<Node, std::vector<Node>, decltype(compare)> pq(compare);
+```
+
+
 
 ## 成员函数
 
