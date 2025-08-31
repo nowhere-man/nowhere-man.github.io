@@ -10,7 +10,7 @@ tags: [STL]
 
 ```cpp
 template<
-	class Key, class T,
+    class Key, class T,
     class Hash = std::hash<Key>,
     class Pred = std::equal_to<Key>,
     class Alloc = std::allocator<std::pair<const Key, T> >
@@ -18,11 +18,10 @@ template<
 ```
 
 其中：
-
-+   `Key`：键类型
-+   `T`：值类型
-+   `Hash`：哈希函数，用于将键映射到一个无符号整数。
-+   `Pred`：用与比较两个键是否相等。自定义的键类型中需要重载`operator==`操作符。
++ `Key`：键类型
++ `T`：值类型
++ `Hash`：哈希函数，用于将键映射到一个无符号整数。
++ `Pred`：用与比较两个键是否相等。自定义的键类型中需要重载`operator==`操作符。
 
 ## 构造函数
 
@@ -30,14 +29,13 @@ template<
 unordered_map<int, int> map1;                          // 默认构造
 unordered_map<int, int> map2(map1);                    // 拷贝构造
 unordered_map<int, int> map3(std::move(map2));         // 移动构造
-unordered_map<int, int> map4{{1, 1}, {2, 2}};          // 初始化列表构造
-
+                                                       // 初始化列表
 // 设置初始的桶数
 unordered_map<int, int> map5(n);
 // 设置初始的桶数和哈希函数
-unordered_map<int, int> map6(n, std::hash<int>()); 
+unordered_map<int, int> map6(n, std::hash<int>());
 // 设置初始的桶数和哈希函数和键相等比较函数
-unordered_map<int, int> map7(4, std::hash<int>(), std::equal_to<int>()); 
+unordered_map<int, int> map7(4, std::hash<int>(), std::equal_to<int>());
 ```
 
 ## 成员函数
@@ -100,11 +98,53 @@ unordered_map<int, int> map7(4, std::hash<int>(), std::equal_to<int>());
 | `cbegin()` | 返回指向第一个元素的 `const` 迭代器。           |
 | `cend()`   | 返回指向最后一个元素之后位置的 `const` 迭代器。 |
 
+## 复杂度
+
+| 操作                                                         | 平均时间复杂度 | 最坏时间复杂度 |
+| ------------------------------------------------------------ | -------------- | -------------- |
+| **访问元素**<br> `unordered_map::at()`<br> `unordered_map::operator[]` | O(1)           | O(n)           |
+| **插入元素**<br> `unordered_map::insert()`<br> `unordered_map::emplace()`<br> `unordered_map::operator[]` | O(1)           | O(n)           |
+| **删除元素**<br> `unordered_map::erase()`                    | O(1)           | O(n)           |
+| **查找元素**<br> `unordered_map::find()`                     | O(1)           | O(n)           |
+| **清空**<br> `unordered_map::clear()`                        | O(n)           | O(n)           |
+| **获取大小**<br> `unordered_map::size()`                     | O(1)           | O(1)           |
+
+**平均时间复杂度 O(1)**: 在理想情况下（哈希函数分布均匀，**没有或极少哈希冲突**），大部分操作（查找、插入、删除）都可以在**常数时间**内完成。
+
+**最坏时间复杂度 O(n)**: 当出现哈希冲突时，多个键值对可能被哈希到同一个桶中，形成一个链表。如果所有元素都哈希到同一个桶，这些操作的复杂度就会退化为**线性时间**，即需要遍历整个链表，其长度为n。
+
 ## 实现分析
 
 `unordered_map`的底层实现是哈希表。
 
+哈希表是一个**数组**，每个元素被称为一个**桶（bucket）**。
 
+1.  当存储一个键值对时，`std::unordered_map`会用**哈希函数**来计算键的哈希值。
+1.  这个哈希值被用来计算**桶的索引**。
+1.  键值对被存储到对应的桶中。
 
-## 性能分析
+理想情况下，每个键都会被映射到不同的桶中。查找、插入或删除操作就只需一步：计算索引，然后直接访问该桶，时间复杂度为 O(1)。
 
+***
+
+哈希冲突是指两个或更多的键被哈希到了同一个桶中。为了解决这个问题，`std::unordered_map` 最常见的实现方式是**开链法。
+
++   每个桶不是直接存储键值对，而是存储一个**链表**。
++   当发生哈希冲突时，新的键值对会被添加到该桶所对应的链表的末尾。
+
+***
+
+为了保持哈希表的性能，`std::unordered_map` 引入了**负载因子（Load Factor），它是元素数量**与**桶数量**的比值。
+
++   `load_factor = size() / bucket_count()`
+
+当负载因子超过一个预设的阈值（通常为 1.0）时，意味着哈希表中的桶可能太拥挤了，哈希冲突的概率增加。为了解决这个问题，`std::unordered_map` 会触发**再哈希（rehash）**操作。
+
+**再哈希的过程：**  
+
+1.  **分配更大的内存空间**，创建一个新的桶数组，其大小通常是原来桶数量的两倍以上。
+1.  **遍历旧的哈希表**中的所有元素。
+1.  **重新计算**每个元素的哈希值，并根据新的桶数量计算新的桶索引。
+1.  将元素**移动到新哈希表**中对应的桶里。
+
+这个过程的复杂度是 O(n)，因为需要遍历所有 n 个元素。虽然这会带来临时的性能开销，但它确保了后续操作的平均 O(1) 性能。
