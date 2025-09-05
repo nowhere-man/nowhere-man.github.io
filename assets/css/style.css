@@ -9,7 +9,7 @@
 body {
     background-color: #F2F2F2;
     color: #444;
-    font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family: monospace, "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 14px;
@@ -17,7 +17,7 @@ body {
 
 .body_container {
     padding: 0 60px;
-    max-width: 1150px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -292,7 +292,7 @@ a:focus {
 .post .post-content hr {
     margin: 2.4em auto;
     border: none;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #ccc;
     position: relative;
 }
 
@@ -314,8 +314,8 @@ a:focus {
 
 .post .post-content ul code, .post .post-content ol code {
     display: inline;
-    margin: 0 5px;
-    padding: 1px 5px;
+    margin: 0 2px;
+    padding: 1px 1px;
     border: 1px solid #ccc;
     background: #eee;
 }
@@ -500,7 +500,7 @@ a:focus {
     }
 
     .content_container {
-        padding-right: 0;
+            padding-right: 0;
     }
 }
 
@@ -523,18 +523,19 @@ strong, b, em {
 }
 
 code, pre {
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-family: monospace;
     font-size: inherit;
 }
 
 code {
-    padding: 0 3px;
-    margin: 0 2px;
+    color: #333;
+    background-color: #a8aaac;
+    padding: 0.1em 0;
+    margin: 0 1px; /* 移除外边距 */
     font-size: 95%;
-    background-color: #f7f7f9;
-    border: 1px solid #e1e1e8;
+    border: none;
     white-space: nowrap;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 pre {
@@ -949,7 +950,7 @@ div {
 .post-nav a {
     display: inline-block;
     line-height: 25px;
-    font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family: monospace, "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
     font-size: 15px;
     color: #555;
     border-bottom: none;
