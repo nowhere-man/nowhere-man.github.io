@@ -260,4 +260,4 @@ int epoll_wait(int epfd, struct epoll_event *events,
     +   当`epoll_wait()`返回时，只需遍历它返回的**就绪事件数组**，而不需要遍历所有监视的文件描述符。
 
 ## 参考
-[](https://www.cnblogs.com/88223100/p/Deeply-learn-the-implementation-principle-of-IO-multiplexing-select_poll_epoll.html)
+[深入学习IO多路复用 select/poll/epoll 实现原理](https://www.cnblogs.com/88223100/p/Deeply-learn-the-implementation-principle-of-IO-multiplexing-select_poll_epoll.html)
