@@ -1,0 +1,1663 @@
+{
+  "type": "drawnix",
+  "version": 1,
+  "source": "web",
+  "elements": [
+    {
+      "id": "tbJrD",
+      "data": {
+        "topic": {
+          "children": [
+            {
+              "text": "Learning"
+            }
+          ],
+          "type": "paragraph"
+        }
+      },
+      "children": [
+        {
+          "id": "wFixR",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "C++"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "dAQmi",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "新特性"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 42,
+              "height": 20
+            },
+            {
+              "id": "EXRaP",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "并发"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "Zpkad",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "原子操作"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                },
+                {
+                  "id": "TwQJG",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "内存模型"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                },
+                {
+                  "id": "XQjHk",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "协程"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 28,
+                  "height": 20
+                }
+              ],
+              "width": 28,
+              "height": 20
+            },
+            {
+              "id": "mPZEJ",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "STL"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "RQAhm",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "迭代器"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 42,
+                  "height": 20
+                },
+                {
+                  "id": "HspkE",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "分配器"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 42,
+                  "height": 20
+                },
+                {
+                  "id": "FZQaT",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "算法"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 28,
+                  "height": 20
+                },
+                {
+                  "id": "HDTeA",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "函数对象"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                }
+              ],
+              "width": 22,
+              "height": 20
+            },
+            {
+              "id": "MWGYF",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "模板编程"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 56,
+              "height": 20
+            },
+            {
+              "id": "eDQck",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "其他"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "DXECZ",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "tuple"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 32,
+                  "height": 20
+                },
+                {
+                  "id": "GmTzx",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "bitset"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 35,
+                  "height": 20
+                },
+                {
+                  "id": "xyTWN",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "位域"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 28,
+                  "height": 20
+                }
+              ],
+              "width": 28,
+              "height": 20
+            },
+            {
+              "id": "MayTR",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 14,
+              "height": 20
+            }
+          ],
+          "width": 28,
+          "height": 20,
+          "isCollapsed": true
+        },
+        {
+          "id": "MfbfW",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "Linux"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "aiWhG",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "实战"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "sKjXM",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "内存泄漏分析"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 84,
+                  "height": 20
+                },
+                {
+                  "id": "KnEQE",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "CPU性能分析"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 83,
+                  "height": 20
+                },
+                {
+                  "id": "BAPcy",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "死锁分析"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                }
+              ],
+              "width": 28,
+              "height": 20
+            },
+            {
+              "id": "XBhSb",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "内存管理"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "JcSHt",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "malloc/free"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 70,
+                  "height": 20
+                }
+              ],
+              "width": 56,
+              "height": 20
+            },
+            {
+              "id": "SYFte",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "进程"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "KEfer",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "进程控制"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                },
+                {
+                  "id": "EmBZJ",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "进程间通信"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 70,
+                  "height": 20
+                }
+              ],
+              "width": 28,
+              "height": 20
+            },
+            {
+              "id": "eEJnX",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "信号"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 28,
+              "height": 20
+            }
+          ],
+          "width": 33,
+          "height": 20,
+          "isCollapsed": true
+        },
+        {
+          "id": "nRWTh",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "视频编码"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "MxNDy",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "H.264"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 36,
+              "height": 20
+            },
+            {
+              "id": "TFEyY",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "H.265"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 36,
+              "height": 20
+            },
+            {
+              "id": "eiXRc",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "前处理"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "dSkfX",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "人脸ROI"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "HHDZr",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "人脸检测"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 56,
+                      "height": 20
+                    },
+                    {
+                      "id": "Wbzht",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "人脸追踪"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 56,
+                      "height": 20
+                    },
+                    {
+                      "id": "BaAwd",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "人脸自适应锐化"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 98,
+                      "height": 20
+                    }
+                  ],
+                  "width": 51,
+                  "height": 20
+                },
+                {
+                  "id": "WjmmG",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "模型部署"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "pwCea",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "opencv DNN"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 80,
+                      "height": 20
+                    },
+                    {
+                      "id": "dEhCy",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "openVINO"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 66,
+                      "height": 20
+                    }
+                  ],
+                  "width": 56,
+                  "height": 20
+                },
+                {
+                  "id": "RxcXm",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "锐化"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "FPXCH",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "USM"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 30,
+                      "height": 20
+                    }
+                  ],
+                  "width": 28,
+                  "height": 20
+                },
+                {
+                  "id": "fzJkp",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "边缘检测"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                },
+                {
+                  "id": "yEGYP",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "其他"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "BmDbt",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "降噪"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 28,
+                      "height": 20
+                    },
+                    {
+                      "id": "jnYkP",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "去块"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 28,
+                      "height": 20
+                    },
+                    {
+                      "id": "XMkMR",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "去模糊"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 42,
+                      "height": 20
+                    },
+                    {
+                      "id": "izSpz",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "对比度增强"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 70,
+                      "height": 20
+                    },
+                    {
+                      "id": "xPQnN",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "显著性检测"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 70,
+                      "height": 20
+                    }
+                  ],
+                  "width": 28,
+                  "height": 20,
+                  "isCollapsed": false
+                }
+              ],
+              "width": 42,
+              "height": 20,
+              "isCollapsed": false
+            },
+            {
+              "id": "MrFet",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "预分析"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "QXTjN",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "帧类型决策"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 70,
+                  "height": 20
+                },
+                {
+                  "id": "xxXGe",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "AQ"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 20,
+                  "height": 20
+                },
+                {
+                  "id": "jaiKS",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "MB-Tree"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 52,
+                  "height": 20
+                },
+                {
+                  "id": "Zywkr",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "场景切换"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                },
+                {
+                  "id": "xCTTR",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "解码信息重利用"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 98,
+                  "height": 20
+                }
+              ],
+              "width": 42,
+              "height": 20,
+              "isCollapsed": true
+            },
+            {
+              "id": "BeAzP",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "参考帧管理"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 70,
+              "height": 20
+            },
+            {
+              "id": "dpJen",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "码控"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "ihrrK",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "CQP"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 28,
+                  "height": 20
+                },
+                {
+                  "id": "RGSCJ",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "ABR"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "jiwDj",
+                      "data": {
+                        "topic": {
+                          "children": [
+                            {
+                              "text": "VBV"
+                            }
+                          ],
+                          "type": "paragraph"
+                        }
+                      },
+                      "children": [],
+                      "width": 26,
+                      "height": 20
+                    }
+                  ],
+                  "width": 26,
+                  "height": 20
+                },
+                {
+                  "id": "XrJbQ",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "CBR"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 26,
+                  "height": 20
+                },
+                {
+                  "id": "iRNnA",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "CRF"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 24,
+                  "height": 20
+                },
+                {
+                  "id": "sZWhJ",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "CCRF"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 33,
+                  "height": 20
+                },
+                {
+                  "id": "cGeAz",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "BRC"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 25,
+                  "height": 20
+                }
+              ],
+              "width": 28,
+              "height": 20,
+              "isCollapsed": true
+            },
+            {
+              "id": "QwGME",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "帧内预测"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "Qswmk",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "快速算法"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                }
+              ],
+              "width": 56,
+              "height": 20
+            },
+            {
+              "id": "BWXwM",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "帧间预测"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "EGYFA",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "快速算法"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                }
+              ],
+              "width": 56,
+              "height": 20
+            },
+            {
+              "id": "BMCjX",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "变换"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 28,
+              "height": 20
+            },
+            {
+              "id": "SbhaB",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "量化"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "GkYMi",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "自适应量化矩阵"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 98,
+                  "height": 20
+                },
+                {
+                  "id": "JMcie",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "RDOQ"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 40,
+                  "height": 20
+                }
+              ],
+              "width": 28,
+              "height": 20
+            },
+            {
+              "id": "ZAzcN",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "滤波"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 28,
+              "height": 20
+            },
+            {
+              "id": "mddjw",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "熵编码"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 42,
+              "height": 20
+            }
+          ],
+          "width": 56,
+          "height": 20,
+          "isCollapsed": true
+        },
+        {
+          "id": "DHnBp",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "网络"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "ZDHyc",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "TCP"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 24,
+              "height": 20
+            },
+            {
+              "id": "RfAxc",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "QUIC"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 33,
+              "height": 20
+            },
+            {
+              "id": "WHcDB",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "FEC"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 23,
+              "height": 20
+            },
+            {
+              "id": "Rmxxj",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "ARQ"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 28,
+              "height": 20
+            },
+            {
+              "id": "yptys",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "NACK"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 37,
+              "height": 20
+            },
+            {
+              "id": "NzDnd",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "Pacer"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 34,
+              "height": 20
+            },
+            {
+              "id": "HxBrp",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "JitterBuffer"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 67,
+              "height": 20
+            },
+            {
+              "id": "YCePJ",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "RTO"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 25,
+              "height": 20
+            },
+            {
+              "id": "WMAfN",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "拥塞控制"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "hCGSt",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "BBR"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 25,
+                  "height": 20
+                },
+                {
+                  "id": "fGiJB",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "GCC"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 27,
+                  "height": 20
+                }
+              ],
+              "width": 56,
+              "height": 20,
+              "isCollapsed": true
+            },
+            {
+              "id": "jDaEi",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "编码传输联动"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "YTXQY",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "自适应分辨率/帧率/码率"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 151,
+                  "height": 20
+                },
+                {
+                  "id": "kdcEd",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "SVC"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 25,
+                  "height": 20
+                },
+                {
+                  "id": "zGjZG",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "LTR"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 22,
+                  "height": 20
+                },
+                {
+                  "id": "Bfpxa",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "码率反馈"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                }
+              ],
+              "width": 84,
+              "height": 20,
+              "isCollapsed": true
+            },
+            {
+              "id": "kihna",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "实战"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "fFBbm",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": "弱网优化"
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 56,
+                  "height": 20
+                }
+              ],
+              "width": 28,
+              "height": 20,
+              "isCollapsed": true
+            }
+          ],
+          "width": 28,
+          "height": 20,
+          "isCollapsed": true
+        },
+        {
+          "id": "wXBde",
+          "data": {
+            "topic": {
+              "children": [
+                {
+                  "text": "流媒体"
+                }
+              ],
+              "type": "paragraph"
+            }
+          },
+          "children": [
+            {
+              "id": "aTrFz",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "WebRTC"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [
+                {
+                  "id": "etctb",
+                  "data": {
+                    "topic": {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "type": "paragraph"
+                    }
+                  },
+                  "children": [],
+                  "width": 14,
+                  "height": 20
+                }
+              ],
+              "width": 52,
+              "height": 20,
+              "isCollapsed": true
+            },
+            {
+              "id": "fwEnH",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "FFmpeg"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 50,
+              "height": 20
+            },
+            {
+              "id": "RZfcx",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "RTP"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 23,
+              "height": 20
+            },
+            {
+              "id": "XdyEz",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "RTMP"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 36,
+              "height": 20
+            },
+            {
+              "id": "BWfnb",
+              "data": {
+                "topic": {
+                  "children": [
+                    {
+                      "text": "HLS"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              },
+              "children": [],
+              "width": 24,
+              "height": 20
+            }
+          ],
+          "width": 42,
+          "height": 20,
+          "isCollapsed": true
+        }
+      ],
+      "width": 69,
+      "height": 25,
+      "layout": "right",
+      "isRoot": true,
+      "type": "mindmap",
+      "points": [
+        [
+          -189.199951171875,
+          351.10003662109375
+        ]
+      ]
+    }
+  ],
+  "viewport": {
+    "zoom": 1,
+    "origination": [
+      -665.39990234375,
+      -112.9998779296875
+    ]
+  }
+}
