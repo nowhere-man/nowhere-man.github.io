@@ -273,7 +273,7 @@ a:focus {
 .post .post-content p code {
   display: inline;
   margin: 0 2px;
-  padding: 2px 6px;
+  padding: 1px 3px;
   background-color: #f8f9fa;
   color: #e01e5a;
   border: 1px solid #e1e4e8;
@@ -322,21 +322,6 @@ a:focus {
   margin: 1em 0;
 }
 
-/* 确保列表中的单行代码块也使用统一样式 */
-.post .post-content ul code,
-.post .post-content ol code,
-.post .post-content li code {
-  display: inline;
-  margin: 0 2px;
-  padding: 2px 6px;
-  background-color: #f8f9fa;
-  color: #e01e5a;
-  border: 1px solid #e1e4e8;
-  border-radius: 3px;
-  font-size: 0.85em;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  white-space: nowrap;
-}
 
 .post .post-content ul ul,
 .post .post-content ol ul {
@@ -560,7 +545,7 @@ pre {
 code {
   display: inline;
   margin: 0 2px;
-  padding: 2px 6px;
+  padding: 1px 3px;
   background-color: #f8f9fa;
   color: #e01e5a;
   border: 1px solid #e1e4e8;
