@@ -2,7 +2,7 @@
 layout: post
 title: IO多路复用模型
 slug: linux-multiplexing
-categories: [网络编程, Linux]
+categories: [Linux]
 tags: [Linux]
 ---
 I/O多路复用实现**单个线程同时监控多个socket的状态**，当**任何一个**socket文件描述符就绪（可读、可写）时，内核会通知应用程序，从而避免了阻塞和轮询的低效。

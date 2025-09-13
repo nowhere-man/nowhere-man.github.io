@@ -50,10 +50,9 @@ menu:
 # Category settings
 my_categories:
   - C++总结
-  - 网络编程
+  - Linux
   - 网络传输
   - 视频开发
   - 开发工具
   - 环境配置
-  - Linux
   - Windows
