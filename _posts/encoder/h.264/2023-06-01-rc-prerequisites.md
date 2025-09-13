@@ -2,7 +2,7 @@
 layout: post
 title: x264 码控-Prerequisites
 slug: x264-rc-prerequisites
-categories: [视频编码]
+categories: [视频开发]
 tags: [H.264]
 ---
 

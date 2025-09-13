@@ -2,7 +2,7 @@
 layout: post
 title: x264 帧类型决策
 slug: x264-slice-type-decision
-categories: [视频编码]
+categories: [视频开发]
 tags: [H.264]
 ---
 

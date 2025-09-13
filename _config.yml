@@ -50,9 +50,9 @@ menu:
 # Category settings
 my_categories:
   - C++总结
-  - 视频编码
   - 网络编程
-  - 流媒体开发
+  - 网络传输
+  - 视频开发
   - 开发工具
   - 环境配置
   - Linux
