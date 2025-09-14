@@ -205,7 +205,7 @@ QUIC 的有效载荷由一个或多个帧组成。每个帧都有一个类型字
 
 
 
-这里介绍两种最重要的帧，除此之外的帧类型参考[RFC 9000 Chapter 19](https://www.rfc-editor.org/rfc/rfc9000.html)
+帧类型参考[RFC 9000 Chapter 19](https://www.rfc-editor.org/rfc/rfc9000.html)
 
 ### STREAM 帧
 
