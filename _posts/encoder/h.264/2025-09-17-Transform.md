@@ -1,7 +1,7 @@
 ---
 layout: post
-title: H.264 变换和量化
-slug: h264-t-q
+title: H.264 变换
+slug: h264-transform
 categories: [视频开发]
 tags: [H.264]
 ---
